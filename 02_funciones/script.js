@@ -1,108 +1,113 @@
-var nombre = "Alvaro";
-function primerSaludo() {}
-console.log("Hola mundo, me llamo", nombre);
-primerSaludo();
+// Functions are parts of code that can be reusable, so u can use x quantity of times
 
-// // Expresiones Funcionales
-
-const segundoSaludo = function () {
-  console.log("Hola, me llamo", nombre);
-};
-segundoSaludo();
-
-// Arrow functions
-
-const tercerSaludo = () => {
-  // un igual y un mayor que
-  console.log("Este es el tercer saludo de", nombre);
-};
-
-// tercerSaludo()
-
-/* ----- Functions ----- */
-
-// Basic functions
-
-function greet() {
-  console.log("Hello There");
+// ---- Simple functions ---- //
+console.log("Simple functions");
+function greet(name, lastName) {
+  console.log("Hi there", name, "& your last name is:", lastName);
 }
-// don't forget to call the function
-greet();
+// Dont forget to call the function and send which params u want to pass
+greet("Alvaro", "Fierro");
 
-/* ----- Functions expressions ----- */
-// We can also declarate functions on variables
-
-const speak = function () {
-  console.log("Have a nice day!");
+// ---- Functions expression ----
+console.log("Functions expression");
+const speak = function name() {
+  console.log("This is a functions expression");
 };
+// You have to select the const, var, or let where ur function is
 speak();
 
-/* ----- Hoisting ----- */
-// You can call a function before you declared it eg.
-// NOTE: It doesn't work with variables or funcions expressions
+// ----- HOISTING ------ //
 
-wave();
+// Works with normal functions but not with function expressions, with normal expressions u can call for the functions before using it or sending params.
 
-function wave() {
-  console.log("This is a wave working on it!");
+console.log("This will be with hoisting");
+
+greet("Alvaro");
+
+function greet(name) {
+  console.log("Hi my name is", name);
 }
 
-/* ----- Arguments & parameters ----- */
+console.log("This also works");
 
-const speech = function (name, time) {
-  // (name) --> is called parameter
-  console.log(`Hi ${name} have a good ${time}`);
+greet("Alvaro");
+
+let sayHi = function greet(name) {
+  console.log("Hi my name is", name);
 };
-speech("Alvaro", "morning"); // this is an argument :)
 
-// We can asiggn values inside the parameters
+// That's why you're declaring into a variable (no matter what type of variable (let/var/const))
 
-const speeching = function (name = "Alvaro", time = "night") {
-  console.log(`Hi ${name} have a good ${time}`);
+// ----- Arguments & parameters //
+console.log("Arguments & params");
+const shiftHours = function (name, time) {
+  console.log(`Have a good ${time} ${name}`);
 };
-speeching(); // this is an argument :)
-// If you add values inside of speeching("Chris", "Morning")
-// THIS WILL BE OVERWRITED
 
-const calcArea = function (radius) {
-  //   let area = 3.14 * radius ** 2;
-  return 3.14 * radius ** 2; // This can let you access later, outside of the scope
+shiftHours("Alvaro", "morning");
+
+// console.log("This also will work \n arguments & params");
+
+// console.log("Arguments & params");
+// const shiftHours = function (name = "Licha", time = "Night") {
+//   console.log(`Have a good ${time} ${name}`);
+// };
+// shiftHours();
+
+// ----- Retuning values -----
+
+// console.log("Calculating area");
+// let calArea = function (radius) {
+//   return (area = 3.14 * radius ** 2);
+//   // But here doesn't pop up
+// };
+
+// // We've to define a new variable to get that data out of there
+
+// const area = calArea(5);
+// console.log(area);
+// // This isn't gonna work
+// // console.log(area);
+
+// ----- Arrow functions -----
+// console.log("Arrow functions");
+// const calcArea = radius;
+
+function suma(a, b) {
+  return a + b;
+}
+
+// with arrow function
+
+// First way
+(a) => {
+  return a + 5;
 };
+// Second way
+(a) => a + 5;
+// Third way
+(a) => a + 5;
+
+// If there are more than one value you have to put into ()
+
+const calcArea = (radius) => 3.14 * radius ** 2;
 
 const area = calcArea(5);
-console.log(area);
-
-const calcVol = function (area) {};
-
-calcVol(area);
-
-/* ----- Arrow functions ----- */
-
-const arrowFunctionCalcArea = (radius) => 3.14 * radius ** 2;
-const arrowFunction = arrowFunctionCalcArea(5);
 console.log("area is:", area);
 
-// const meet = function () {
-//   return "hello, world";
+// var sal = function () {
+//   return "hello world";
 // };
+// var out = sal(); // store insde a var DONT FORGET THE PARENTHESIS
+// console.log(out); // call for the function through the var
 
-const meet = () => "hello world";
-const result = meet();
-console.log(result);
+var val = () => "hello world"; // it ends the arrow function
+var out = val(); // DONT FORGET THE PARENTHESIS
+console.log(out); // call for the function through the var
 
-/* ----- Exercises ----- */
+// ----- Products and taxes -----
 
-// Turn the follwowing function into a arrow function
-
-// const bill = function (products, tax) {
-//   let = total = 0;
-//   for (let i = 0; i < products.length; i++) {
-//     total += products[i] + products[i] * tax;
-//   }
-//   return total;
-// };
-
-const bill = (products, tax) => {
+const bill = function (products, tax) {
   let total = 0;
   for (let i = 0; i < products.length; i++) {
     total += products[i] + products[i] * tax;
@@ -110,63 +115,7 @@ const bill = (products, tax) => {
   return total;
 };
 
-console.log(bill([10, 15, 30], 0.2));
+console.log("The final price is", bill([(10, 20, 30)], 0.16));
 
-/* ----- Methods & synonymous -----*/
-
-// Methods & synonymous ara kind the same thing
-
-// Functions
-const sayHi = () => "hello";
-let resultOne = sayHi();
-console.log(resultOne);
-
-// Methods
-
-const name = "Alvaro";
-
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
-
-/* ----- Callbakcs & foreach ----- */
-
-const myFunc = (callbackFunc) => {
-  //do something
-  let value = 50;
-  callbackFunc(value);
-};
-
-// myFunc(function (value) {
-//   // we've to declare that parameter (value)
-//   //do something
-//   console.log(value);
-// });
-
-myFunc((value) => {
-  // we've to declare that parameter (value)
-  //do something
-  console.log(value);
-});
-// We can also pass in a function as an argument & wehn we do this the functions is called a callback function
-
-// let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
-
-// people.forEach((person, index) => {
-//   console.log(index, person);
-// });
-
-// get a reference to the 'ul'
-
-const ul = document.querySelector(".people");
-
-const people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
-
-let html = ``;
-
-people.forEach((person) => {
-  //create HTML template
-  html += `<li style="color:purple">${person}</li> `;
-});
-
-console.log(html);
-ul.innerHTML = html;
+var chanchitoFeliz = "Alvaro";
+console.log(chanchitoFeliz.toUpperCase()); // dont forget use () eg. .toUpperCase()
