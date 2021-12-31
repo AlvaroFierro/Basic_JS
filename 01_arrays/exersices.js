@@ -40,3 +40,20 @@ let lastItem = myArray[myArray.length - 1];
 console.log("The last item is:", lastItem);
 
 console.log(myArray);
+
+let frutas = [
+  "Manzana",
+  "Jugo",
+  "Computadora",
+  "Teclado",
+  "Raton",
+  "RHCP",
+  "Sacrifice",
+  "Listen",
+  "Trick",
+];
+console.log(frutas);
+console.log(frutas.length);
+
+let eliminar = frutas.splice(5, 2); // Posicion, numElementos
+console.log(eliminar);
