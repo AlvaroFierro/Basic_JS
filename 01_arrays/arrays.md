@@ -111,15 +111,11 @@ let copia = [...frutas];
 
 ```javascript
 console.log(frutas);
-/*[ "Manzana",
-  "Jugo",
-  "Computadora",
-  "Teclado",
-  "Raton",
-  "RHCP",
-  "Sacrifice",
-  "Listen",
-  "Trick",
+/*[ "Manzana", "Jugo",
+  "Computadora", "Teclado",
+  "Raton", "RHCP",
+  "Sacrifice", "Listen",
+  "Trick"
 ]*/
 
 let eliminar = frutas.splice(5, 2); // Posicion, numElementos
