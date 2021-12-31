@@ -23,8 +23,8 @@ myCar.year = 1969;
 var myCar = {
   make: "Ford",
   model: "Mustang",
-  year: 1969, // al final no lleva coma
-}; // Finaliza con ;
+  year: 1969,
+};
 
 // console.log(myCar);
 
