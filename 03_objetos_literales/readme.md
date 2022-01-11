@@ -4,7 +4,12 @@ Antes de empezar a saber lo que son los objetos literales, es necesario saber qu
 
 Los objetos literales son un tipo de objetos (sencillos)personalizados, que se pueden crear a partir de una serie de propiedades y métodos. **Y son transferibles**
 
-## Sintaxis de los objetos literales
+## Tabla de contenidos
+
+- [Sintaxis](#sintaxis)
+- [Acceso a propiedades (dot notation)](#acceso-a-propiedades-dot-notation)
+
+## Sintaxis 
 
 ```javascript
 var persona = {
@@ -23,7 +28,7 @@ var persona = {
 | edad      | 25     | int          |
 | vivo      | true   | boolean      |
 
-### Acceso a valor de propiedades (dot notation)
+### Acceso a propiedades (dot notation)
 
 Podemos acceder a las diferentes propiedades de nuestros objetos con notación de punto (dot notation) de la siguiente manera:
 
@@ -64,12 +69,12 @@ carro.rin = "15";
 console.log(carro.rin); // 15
 ```
 
-### Modidficando un elemento después de crearlo
+### Actualizando un elemento
 
 Se emplea la misma manera que cuando vamos a añadir un elemento, pero en vez de añadir un valor, se modifica el valor existente. `objeto.propiedad = "valor"`
 
 ```javascript
 carro.motor = 8.0;
 console.log(carro.motor); // 8.0
-console.log(carro) // { marca: 'Ford', modelo: 'Mustang', color: 'Rojo', motor: 8.0, rin: '15' }
-
+console.log(carro); // { marca: 'Ford', modelo: 'Mustang', color: 'Rojo', motor: 8.0, rin: '15' }
+```
