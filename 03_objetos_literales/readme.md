@@ -135,7 +135,7 @@ console.log(carro.motor); // 8.0
 console.log(carro); // { marca: 'Ford', modelo: 'Mustang', color: 'Rojo', motor: 8.0, rin: '15' }
 ```
 
-## Eliminacion de campos
+## Eliminación de campos
 
 Tenemos que usar la palabra reservada `delete` para borrar una propiedad de un objeto.
 
