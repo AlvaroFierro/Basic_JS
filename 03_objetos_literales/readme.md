@@ -83,7 +83,7 @@ console.log(carro.marca); // Ford
 
 **Esta es la manera mas usada para acceder a las propiedades de un objeto.**
 
-### Acceso a valor de propiedades (bracket notation)
+### Acceso a propiedades (bracket notation)
 
 Podemos acceder a las diferentes propiedades de nuestros objetos con notación de punto (dot notation) de la siguiente manera:
 
