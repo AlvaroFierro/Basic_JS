@@ -2,7 +2,7 @@ En este repositorio se pueden encontrar temas que algunas veces pueden consultar
 
 Podemos encontrar:
 
-- [Arrays](#arrays)
+- Arrays
 - Funciones
 - Objetos Literales
 - Metodos de los arreglos
