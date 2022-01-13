@@ -1,6 +1,6 @@
 # Metodos de arrays (arreglos)
 
-Un método se refiere a una función para hacer más fácil la manipulación de un arreglo. Pero no significa que siempre los debamos de usar, ya que esto dependerá de nuestra necesidad.
+Un método se refiere a una función para hacer más fácil la manipulación de un arreglo. Pero no significa que siempre los debamos de usar, ya que esto dependerá de nuestra necesidad. Mas información [aqui](https://www.w3schools.com/js/js_array_methods.asp)
 
 | Nombre     | Descripcion                                                                                                                                                                                                    | Codigo                  |
 | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
