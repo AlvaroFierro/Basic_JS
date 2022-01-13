@@ -18,6 +18,7 @@ Tabla de contenidos:
 - [Encontrando el indice de un elemento de un array](#encontrando-el-indice-de-un-elemento-de-un-array)
 - [Copiando un array](#copiando-un-array)
 - [Eliminar varios elementos de acuerdo a x posiciones](#eliminar-varios-elementos-de-acuerdo-a-x-posiciones)
+- [Recorriendo un arreglo](#recorriendo-un-arreglo)
 
 ### Creando arrays
 
@@ -121,6 +122,29 @@ console.log(frutas);
 let eliminar = frutas.splice(5, 2); // Posicion, numElementos
 console.log(eliminar);
 // ['RHCP', 'Sacrifice']
+```
+
+### Recorriendo un arreglo
+
+En ciertos casos vamos a requerir saber el contenido de un arreglo en poco tiempo, es por eso que tendremos que usar for.
+
+```javascript
+let arregloLargo = [
+  "Hola",
+  23,
+  "Luis",
+  "Miguel",
+  true,
+  false,
+  "Chanchito",
+  "Feliz",
+  50,
+  false,
+];
+
+for(i=0; i< arregloLargo.length; i++){
+  console.log(arregloLargo[i])
+}
 ```
 
 Para más información, consultar la documentación oficial [aqui](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
