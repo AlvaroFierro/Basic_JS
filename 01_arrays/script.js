@@ -84,11 +84,10 @@ console.log("Esta es la copia", copiaArray);
 let unArray = ["Hola", "este", "array", "se", "unira"];
 let otroArray = ["con", "este", "otro"];
 
-let unionArrays = unArray.concat(otroArray)
-console.log("Array concatenado",unionArrays);
-
+let unionArrays = unArray.concat(otroArray);
+console.log("Array concatenado", unionArrays);
 
 // Invertir el orden del array
 
-let ordenInverso = unionArrays.reverse()
+let ordenInverso = unionArrays.reverse();
 console.log(ordenInverso);
