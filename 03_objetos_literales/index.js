@@ -1,10 +1,4 @@
-// Un objeto es una coleccion de propiedades, se puede comparar a algo tangible en la vida real. ==>
-// En una persona, color, estatura, tez, etc.
-
 // Las propiedades de los objetos se hacen con punto
-
-// nombreObjeto.nombrePropiedad
-
 // Son sensibles a mayusc y minusc
 
 /* ----- La forma larga ----- */
@@ -68,3 +62,57 @@ var foo = { propiedad_unica: 1 },
   objeto = {};
 objeto[foo] = "valor";
 alert(objeto[bar]);
+
+console.log("----------------------------------------------------");
+let carro = {
+  marca: "Ford",
+  modelo: "Mustang",
+  color: "Rojo",
+  motor: 6.0,
+  carroseria: {
+    tipo: "Coupe",
+    motor: 6.0,
+    rpm: 8000,
+  },
+};
+
+console.log(carro);
+console.log(`La marca del carro es:`, carro.marca); // Ford
+
+carro.rin = "Azul";
+console.log(`El rin :`, carro.rin); // Azul
+console.log(carro);
+
+console.log("Antes de eliminar el rin");
+console.log(carro);
+
+console.log("Eliminando un campo del objeto");
+delete carro.rin;
+console.log(carro);
+
+console.log("----------------------------------------------------");
+
+let computadora = {
+  marca: "Asus",
+  modelo: "X512DA",
+  memoria: {
+    ram: "8GB",
+    vram: "2GB",
+  },
+  almacenamiento: {
+    discoDuro: "500GB",
+    ssd: "128GB",
+  },
+};
+
+console.log(computadora.almacenamiento);
+
+let gato = {
+  nombre: "Kitten",
+  edad: 5,
+  ladrar: function () {
+    return `${this.nombre} está ladrando`;
+  },
+};
+
+console.log(gato.ladrar()); // Kitten está ladrando
