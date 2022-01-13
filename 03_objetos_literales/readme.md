@@ -7,7 +7,7 @@ Los objetos literales son un tipo de objetos (sencillos)personalizados, que se p
 ## Tabla de contenidos
 
 - [Sintaxis](#sintaxis)
-- [Identificadores](#identificadores)
+- [Identificadores o valores](#identificadores-o-valores)
 - [Propiedades](#propiedades)
 - [Acceso a propiedades (dot notation)](#acceso-a-propiedades-dot-notation)
 - [Acceso a propiedades (bracket notation)](#acceso-a-propiedades-bracket-notation)
@@ -35,7 +35,7 @@ let persona = {
 | edad      | 25    | int          |
 | vivo      | true  | boolean      |
 
-## Identificadores
+## Identificadores o valores
 
 Es el valor que se le asigna a una propiedad. Ejemplo:
 
