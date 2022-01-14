@@ -15,6 +15,7 @@ Los objetos literales son un tipo de objetos (sencillos)personalizados, que se p
 - [Actualizando un elemento](#actualizando-un-elemento)
 - [Eliminación de campos](#eliminación-de-campos)
 - [Anidación de objetos](#anidación-de-objetos)
+- [Recorriendo los valores de un objeto](#recorriendo-los-valores-de-un-objeto)
 
 ## Sintaxis
 
@@ -62,7 +63,6 @@ let persona = {
   colorOjos: "Cafe",
   edad: 25,
   vivo: true,
-};
 };
 ```
 
@@ -177,3 +177,21 @@ console.log(computadora.almacenamiento);
 }
 */
 ```
+
+## Recorriendo los valores de un objeto
+
+Podemos recorrer las propiedades de un objeto. Hay dos maneras de resolver esto:
+
+```javascript
+let persona = {
+  nombre: "Ed Sheeran",
+  artista: true,
+  edad: 30,
+}; // Objeto creado
+
+for (let propiedad in persona) {
+  console.log(persona[propiedad]); // Ed Sheeran, true, 30
+}
+```
+
+Si tienes dudas con `in`, puedes checar la documentación [aquí:](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/in)
