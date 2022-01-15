@@ -4,7 +4,7 @@
 
 Son funciones que son pasadas como argumentos a otras funciones. Recordemos la estructura de una función:
 
-![Structure-of-a-function](https://ashwanig3.github.io/assets/media/Drawing.png)
+![Structure-of-a-function](https://imgur.com/a/WLITPjT)
 
 ```javascript
 function saludar(nombre) {
