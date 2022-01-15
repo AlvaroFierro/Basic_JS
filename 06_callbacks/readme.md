@@ -1,8 +1,8 @@
-## Callbacks
+# Callbacks
 
-### ¿Que son?
+# ¿Que son?
 
-Son funciones dentro de otra funcion, pero es pasada en forma de argumento. Que es invocada afuera de otra funcion, con el fin de ejeutar alguna rutina/acccion.
+Son funciones que son pasadas como argumentos a otras funciones. Recordemos la estructura de una función:
 
 ```javascript
 function saludar(nombre) {
