@@ -51,4 +51,4 @@ Y ahora surge la pregunta: ¿Cuando debemos de usar un callback?
 
 Bueno, para esto debemos de revisar lo que son las funciones asincronas. Donde la funcion de be de esperar a que se ejecute una funcion asincrona.
 
-Consulta el capitulo [07 de asincronismo]('./07_asincronismo').Tambien puedes ver otro ejemplo de codigo [aqui]('./index/js')
+Consulta el capitulo [07 de asincronismo](..\07_asincronismo\README.md).Tambien puedes ver otro ejemplo de codigo [aqui](\index.js)
