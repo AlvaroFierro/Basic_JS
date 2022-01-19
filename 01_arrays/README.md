@@ -150,5 +150,3 @@ for (i = 0; i < arregloLargo.length; i++) {
 Para más información, consultar la documentación oficial [aqui](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 Si quieres practicar lo aprendido checa los siguientes [ejercicios](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Arrays) 👀
-
-hkahd
