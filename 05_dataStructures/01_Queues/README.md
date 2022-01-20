@@ -1,9 +1,5 @@
 # Colas / Queues
 
-Tabla de contenidos
-
-- [Métodos](#metodos)
-
 Una cola o queue por su nombre en ingles es una estructura de datos que nos permite almacenar elementos donde insertamos y eliminamos datos de los extremos.
 
 Esto se le conoce como `FIFO` (First In First Out) o `First In First Out` (primero en entrar, primero en salir). Esto es traducido a la vida real de la siguiente manera:
@@ -31,4 +27,4 @@ Sus métodos secundarios son:
 - `getIndex` o `getIndice`: Devuelve el índice de un elemento específico de la cola
 - `sort` o `ordenar`: Ordena los elementos de la cola
 
-Para ver el código fuente de estos métodos, visita el siguiente enlace:
+Para ver el código fuente de estos métodos, visita el siguiente [enlace](.\index.js)
