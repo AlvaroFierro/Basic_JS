@@ -4,9 +4,16 @@ Tabla de contenidos:
 
 - [Métodos](#metodos)
 - [Explicación](#explicacion)
-  - [Constructor](#constructor)
-  - [Enqueue](#enqueue)
-  - [Dequeue](#dequeue)
+  - [constructor](#constructor)
+  - [enqueue](#enqueue)
+  - [dequeue](#dequeue)
+  - [peek](#peek)
+  - [isEmpty](#isempty)
+  - [size](#size)
+  - [clear](#clear)
+  - [remove](#remove)
+  - [getIndex](#getindex)
+  - [sort](#sort)
 
 Una cola o queue por su nombre en ingles es una estructura de datos que nos permite almacenar elementos donde insertamos y eliminamos datos de los extremos.
 
@@ -41,7 +48,7 @@ Para ver el **código completo** de los métodos, visita el siguiente [enlace](.
 
 La explicacion detallada de cada cosa aqui ⤵
 
-## Constructor
+## constructor
 
 Primero debemos de empezar a crear el constructor de la clase de la cola. Esto lo que nos va a permitir será crear un objeto con la clase llamada `queue` y posteriormente llamar a cada método de la clase.
 
@@ -52,17 +59,17 @@ class Queue {
   }
 ```
 
-## Enqueue
+## enqueue
 
 Este metodo como ya vimos, nos permite insertar un elemento al final de la cola.
 
 ```js
-unshift(element){
-  this.items.unshift(element);
-}
+ enqueue(element) {
+    this.items.push(element);
+  }
 ```
 
-## Dequeue
+## dequeue
 
 Este metodo nos permitira eliminar el primer elemento de la cola.
 
@@ -73,9 +80,9 @@ dequeue();
 }
 ```
 
-## Peek
+## peek
 
-Devuelve el primer valor de la cola sin eliminarlo.
+Devuelve el primer valor de la cola sin eliminarlo. **He utilizado la sixtaxis del operador ternario** Si tienes dudas consulta la documentación [aquí](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 ```js
  peek() {
@@ -83,7 +90,9 @@ Devuelve el primer valor de la cola sin eliminarlo.
   }
 ```
 
-## IsEmpty
+## isEmpty
+
+Muestra un 0 si es que la cola se encuentra vacia
 
 ```js
  isEmpty() {
@@ -93,30 +102,64 @@ Devuelve el primer valor de la cola sin eliminarlo.
 
 ## size
 
+Muestra el tamaño de la cola con el método `length`
+
 ```js
 
+size(){
+    return this.items.length;
+  }
 ```
 
 ## clear
 
-```js
+Vacia todos los elementos de la cola, dejando la cola vacía.
 
+```js
+clear() {
+    this.items = [];
+  }
 ```
 
 ## remove
 
-```js
+**Remueve un elemento en especifico** de la lista con `indexOf`
 
+```js
+remove(element) {
+    let index = this.items.indexOf(element);
+    if (index !== -1) {
+      this.items.splice(index,1);
+    }
+  }
 ```
 
 ## getIndex
 
-```js
+Regresa el indice de un elemento con `indexOf`
 
+```js
+getIndex(element) {
+  return this.items.indexOf(element);
+}
 ```
 
 ## sort
 
-```js
+Nos permite ordenar los elementos de la cola de menor a mayor **por defecto**. Con `sort`
 
+```js
+sort() {
+  this.items.sort()
+}
 ```
+
+Si queremos invertir la cola seria de la siguiente manera con `reverse`
+
+```js
+sortInverted() {
+  this.items.sort().reverse()
+}
+```
+
+Recuerda que puedes checar el codigo completo [aqui](.\queue.js)
