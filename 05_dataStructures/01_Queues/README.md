@@ -162,4 +162,4 @@ sortInverted() {
 }
 ```
 
-Recuerda que puedes checar el codigo completo [aqui](.\queue.js)
+Recuerda que puedes checar el codigo completo [aqui](/queue.js)
