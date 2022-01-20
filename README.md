@@ -2,18 +2,10 @@ En este repositorio se pueden encontrar temas que algunas veces pueden consultar
 
 Podemos encontrar:
 
-- [Arrays](.\01_arrays\README.md)
+- [Arrays](\01_arrays\README.md)
 - [Funciones](\02_funciones\README.md)
 - [Objetos Literales](\03_objetosLiterales\README.md)
 - [Metodos de los arrays](\04_metodosArrays\README.md)
-<<<<<<< HEAD
-- Data Structures
-  - Queues
-  - Stacks
-  - Linked List
-  - Binary Tree
-- Callbacks
-=======
 - [Data Structures](\05_dataStructures)
   - [Queues](\05_dataStructures\01_queues\README.md)
   - [Stacks](\05_dataStructures\02_stacks\README.md)
@@ -21,4 +13,3 @@ Podemos encontrar:
   - [Binary Trees](\05_dataStructures\04_binaryTrees\README.md)
 - [Callbacks](\06_callbacks\README.md)
 - [Asincronismo](\07_asincronismo\README.md)
->>>>>>> parent of 98f8409 (Missing Path)
