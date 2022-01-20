@@ -1,4 +1,6 @@
-En este repositorio se pueden encontrar temas que algunas veces pueden consultar en confusiones.
+En este repositorio puedes aprender algunos de los temas más basicos de Javascript.
+
+Ideal para principiantes ✨
 
 Podemos encontrar:
 
