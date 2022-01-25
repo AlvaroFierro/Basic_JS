@@ -1,6 +1,6 @@
 # Funciones
 
-Una `función` es una un subprograma que puede ser llamado externamente a la funcion. De la misma manera que un programa va a requerir de una serie de instrucciones o generalmente conocido como: _cuerpo de la funcion_. Se pueden pasar valores a las funciones y las funciones reegresaran valores.
+Una `función` es una un subprograma (porcion de codigo) que puede ser llamado externamente a la funcion. De la misma manera que un programa va a requerir de una serie de instrucciones o generalmente conocido como: _cuerpo de la funcion_. Se pueden pasar valores a las funciones y las funciones reegresaran valores.
 
 En JavaScript las funciones son objetos de primer clase, porque tienen propiedades y métodos como cualquier otro objeto.
 
